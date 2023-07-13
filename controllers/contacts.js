@@ -11,7 +11,7 @@ const listContacts = async (req, res) => {
 
 const getContact = async (req, res) => {
     const id = new ObjectId(req.params.id);
-    const contacts = await mogo.getDb().collection('contacts');
+    const contacts = await mongo.getDb().collection('contacts');
     const results = await contacts.findOne({_id:id});
     res.send(results).status(200);
 }

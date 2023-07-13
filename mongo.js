@@ -3,7 +3,7 @@ require('dotenv').config();
 const dbUser = process.env.DB_USER;
 const dbPass = process.env.DB_PASSWORD;
 
-const uri = `mongodb+srv://${dbUser}:${dbPass}@cluster0.6snw68f.mongodb.net/?retryWrites=true&majority`;
+const uri = `mongodb+srv://${dbUser}:${dbPass}@cluster0.6snw68f.mongodb.net/?retryWrites=true&w=majority`;
 
 let _client;
 
@@ -26,7 +26,7 @@ const getDb = () => {
     if (!_client) {
         throw Error('Db not initialized');
     }
-    return _client.db('cse341');
+    return _client.db('project1');
 };
 
 module.exports = {

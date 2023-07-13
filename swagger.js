@@ -4,7 +4,7 @@ const doc = {
         title: 'Project 1',
         description: 'My first project',
     },
-    host: 'https://project-1-mlda.onrender.com',
+    host: 'project-1-mlda.onrender.com',
     schemes: ['https'],
 };
 

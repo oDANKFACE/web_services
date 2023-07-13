@@ -5,7 +5,7 @@
     "description": "My first project",
     "version": "1.0.0"
   },
-  "host": "https://project-1-mlda.onrender.com",
+  "host": "project-1-mlda.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"

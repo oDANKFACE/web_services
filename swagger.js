@@ -5,7 +5,7 @@ const doc = {
         description: 'My first project',
     },
     host: 'https://project-1-mlda.onrender.com',
-    schemes: ['http'],
+    schemes: ['https'],
 };
 
 const outputFile = './swagger.json';

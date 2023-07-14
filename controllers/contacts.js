@@ -46,7 +46,7 @@ const updateContact = async (req, res) => {
     const response = await mongo.getDb().collection('contacts').replaceOne({ _id: userId }, contact);
     console.log(response);
     if (response.modifiedCount > 0) {
-        res.status(201).send(response);
+        res.status(204).send(response);
     } else {
         res.status(500).json(response.error || 'Something went wrong while updating the contact!');
     }
@@ -57,7 +57,7 @@ const deleteContact = async (req, res) => {
     const response = await mongo.getDb().collection('contacts').deleteOne({ _id: id }, true);
     console.log(response);
     if (response.deletedCount > 0) {
-        res.status(204).send();
+        res.status(200).send();
     } else {
         res.status(500).json(response.error || 'Something went wrong while deleting the contact!');
     }

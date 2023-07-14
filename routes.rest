@@ -1,0 +1,19 @@
+// LOCALHOST
+###
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/64b043c75c0c9f920df41822
+###
+GET http://localhost:3000/contacts/64b044cb5c0c9f920df41825
+###
+GET http://localhost:3000/contacts/64b045035c0c9f920df41826
+
+// PRODUCTION Deploy
+###
+GET https://project-1-mlda.onrender.com/contacts
+###
+GET https://project-1-mlda.onrender.com/contacts/64b043c75c0c9f920df41822
+###
+GET https://project-1-mlda.onrender.com/contacts/64b044cb5c0c9f920df41825
+###
+GET https://project-1-mlda.onrender.com/contacts/64b045035c0c9f920df41826

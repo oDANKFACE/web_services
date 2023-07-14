@@ -4,8 +4,8 @@ const doc = {
         title: 'Project 1',
         description: 'My first project',
     },
+    host: 'project-1-mlda.onrender.com',
     // host: 'localhost:3000',
-    host: 'project-1-mlda.onrender.project-1-mlda.onrender.com',
     schemes: ['https'],
 };
 
